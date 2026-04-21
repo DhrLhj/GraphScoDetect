@@ -7,18 +7,16 @@ GraphScoDetect is a two-stage deep learning framework for scoliosis screening fr
 
 ## Repository contents
 
-A minimal release should contain the following files:
+The current release contains the following core files:
 
 ```text
 GraphScoDetect/
 ├── README.md
-├── LICENSE
 ├── requirements.txt
 ├── graph_scodetect_revised.py
-├── demo_data/
-│   ├── train01zhee/
-│   └── test01zhee/
-└── results/
+└── data2/
+    ├── train01zhee/
+    └── test01zhee/
 ```
 
 If your repository uses a different entry script name, replace `graph_scodetect_revised.py` with the actual file name.
@@ -135,22 +133,20 @@ If your file naming convention differs, modify the functions:
 
 in the main script.
 
+The simulated demo files included in this repository follow the same naming convention, so the code can run without modification.
+
+
 ---
 
 ## 4. Demo instructions
 
 ### Demo dataset
-To satisfy the checklist requirement for a small dataset, include a **small anonymized or simulated demo dataset** under `demo_data/` or `data2/` with the same folder structure expected by the script.
+This repository includes a small **simulated demo dataset** under the default folder structure:
 
-A minimal demo can contain:
-- 2-4 training samples
-- 2-4 test samples
-- at least two labels
-
-If you cannot release real clinical data, provide either:
-1. a fully anonymized small example,
-2. a simulated dataset matching the expected format, or
-3. a toy example plus a detailed schema description.
+```text
+data2/
+├── train01zhee/
+└── test01zhee/
 
 ### Running the demo
 If your demo data are stored directly in the default folder structure (`data2/train01zhee` and `data2/test01zhee`), run:
