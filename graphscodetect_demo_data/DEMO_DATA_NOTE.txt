@@ -1,0 +1,3 @@
+This folder contains a small simulated demo dataset for GraphScoDetect.
+It is provided only to demonstrate installation, data loading, preprocessing, training,
+and inference. It is not intended to reproduce the quantitative results in the manuscript.
